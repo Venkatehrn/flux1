@@ -8,6 +8,7 @@ spec:
   chart:
     spec:
       chart: my-chart
+      version: 1.0.0
       sourceRef:
         kind: GitRepository
         name: fluxpod     # Name of the GitRepository resource
