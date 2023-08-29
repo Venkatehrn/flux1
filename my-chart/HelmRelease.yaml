@@ -12,5 +12,6 @@ spec:
         kind: GitRepository
         name: fluxpod     # Name of the GitRepository resource
         namespace: flux-system  # Namespace where the GitRepository is located
-  values:
-    replicaCount: 3
+    values:
+      replicaCount: 3     # Set the replica count to 3 or your desired value
+
