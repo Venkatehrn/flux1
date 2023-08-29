@@ -10,7 +10,7 @@ spec:
       chart: my-chart
       sourceRef:
         kind: GitRepository
-        name: podinfo      # Name of the GitRepository resource
+        name: fluxpod      # Name of the GitRepository resource
         namespace: flux-system  # Namespace where the GitRepository is located
   values:
     replicaCount: 2
