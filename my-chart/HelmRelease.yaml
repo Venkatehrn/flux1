@@ -13,4 +13,4 @@ spec:
         name: fluxpod     # Name of the GitRepository resource
         namespace: flux-system  # Namespace where the GitRepository is located
   values:
-    replicaCount: 2
+    replicaCount: 3
