@@ -1,1 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: fluxpod
+  namespace: flux-system
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: my-chart ./
+      sourceRef:
+        kind: GitRepository
+        name: fluxpod     # Name of the GitRepository resource
+        namespace: flux-system  # Namespace where the GitRepository is located
+    values:
+      replicaCount: 3     # Set the replica count to 3 or your desired value
 
