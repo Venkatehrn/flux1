@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: fluxpod
+  namespace: flux-system
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: my-chart
+      sourceRef:
+        kind: GitRepository
+        name: podinfo      # Name of the GitRepository resource
+        namespace: flux-system  # Namespace where the GitRepository is located
+  values:
+    replicaCount: 2
