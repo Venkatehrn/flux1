@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: flux1/my-chart/templates
+      chart: ./
       sourceRef:
         kind: GitRepository
         name: fluxpod     # Name of the GitRepository resource
