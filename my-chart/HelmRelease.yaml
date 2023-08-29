@@ -9,7 +9,7 @@ spec:
     spec:
       chart: ./
       sourceRef:
-        kind: GitRepository
+        kind: GitRepository.yaml
         name: fluxpod     # Name of the GitRepository resource
         namespace: flux-system  # Namespace where the GitRepository is located
   values:
